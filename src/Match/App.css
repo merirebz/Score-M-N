@@ -1,0 +1,289 @@
+.md-root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: #0F2A20;
+  font-family: Inter, system-ui, sans-serif;
+  box-sizing: border-box;
+}
+
+.md-card {
+  width: 100%;
+  max-width: 42rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  background-color: #183428;
+  border: 1px solid #2E4A3D;
+}
+
+.md-header {
+  padding: 24px 24px 20px;
+  border-bottom: 1px solid #2E4A3D;
+}
+
+.md-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #8FA89A;
+}
+
+.md-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.md-icon-xs {
+  width: 14px;
+  height: 14px;
+}
+
+.md-scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.md-team {
+  text-align: center;
+}
+
+.md-badge {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 8px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.md-badge-ned {
+  background-color: #F58220;
+  color: #0F2A20;
+}
+
+.md-badge-mar {
+  background-color: #C1272D;
+  color: #F5E6C8;
+}
+
+.md-team-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #F5E6C8;
+}
+
+.md-score {
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #F5E6C8;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+
+.md-score-sub {
+  font-size: 12px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: #8FA89A;
+}
+
+.md-result-banner {
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(124, 196, 139, 0.12);
+  color: #7CC48B;
+}
+
+.md-tabs {
+  display: flex;
+  padding: 16px 24px 0;
+  gap: 4px;
+}
+
+.md-tab {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #8FA89A;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.md-tab-active {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #F5E6C8;
+}
+
+.md-content {
+  padding: 24px;
+  min-height: 260px;
+}
+
+.md-stat-row {
+  margin-bottom: 20px;
+}
+
+.md-stat-row:last-child {
+  margin-bottom: 0;
+}
+
+.md-stat-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #A9C4B8;
+}
+
+.md-stat-value-ned {
+  font-weight: 600;
+  color: #F58220;
+}
+
+.md-stat-value-mar {
+  font-weight: 600;
+  color: #C1272D;
+}
+
+.md-stat-label {
+  font-weight: 500;
+}
+
+.md-stat-bars {
+  display: flex;
+  gap: 4px;
+  height: 8px;
+}
+
+.md-stat-bar-track {
+  flex: 1;
+  display: flex;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.md-stat-bar-track-ned {
+  justify-content: flex-end;
+}
+
+.md-stat-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+
+.md-timeline-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.md-timeline-item-divider {
+  border-bottom: 1px solid #2E4A3D;
+}
+
+.md-timeline-minute {
+  font-size: 12px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  width: 48px;
+  flex-shrink: 0;
+  padding-top: 2px;
+  color: #8FA89A;
+}
+
+.md-timeline-dot {
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  flex-shrink: 0;
+  color: transparent;
+}
+
+.md-timeline-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: #F5E6C8;
+}
+
+.md-timeline-detail {
+  font-size: 12px;
+  margin: 2px 0 0;
+  color: #8FA89A;
+}
+
+.md-shootout {
+  display: flex;
+  gap: 24px;
+}
+
+.md-shootout-col {
+  flex: 1;
+}
+
+.md-shootout-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.md-shootout-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.md-shootout-kick {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.md-shootout-name {
+  font-size: 14px;
+  flex: 1;
+  color: #F5E6C8;
+}
+
+.md-shootout-outcome {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #8FA89A;
+}
+
+.md-shootout-divider {
+  width: 1px;
+  background-color: #2E4A3D;
+}
